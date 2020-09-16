@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>pH Analyzer</title>
+
+</head>
+
+<body>
+  <script>
+    function phAnalyzer(pH) {
+
+      if (pH < 7) {
+        console.log("Acidic")
+      } else if (pH === 7) {
+        console.log("Neutral")
+      } else if (pH < 15) {
+        console.log("Alkaline")
+      } else {
+        console.log("invalid pH value")
+      }
+    }
+
+     console.log(phAnalyzer(7))      // -> "neutral"
+     console.log(phAnalyzer(4))    // -> "acidic"
+     console.log(phAnalyzer(12))     // -> "alkaline"
+     console.log(phAnalyzer(25))     // -> "invalid pH value"
+
+  </script>
+</body>
+
+</html>
